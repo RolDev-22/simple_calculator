@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple-Calculator</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./function/script.js" defer></script>
+    <script src="./function/funtionality.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h5>SIMPLE CALCULATOR</h5>
+        <h6 id="timer"></h6>
+    </header>
+    <main>
+        <section class="bodyCalculator">
+            <input type="text" id="screen" disabled>
+            <div class="containerButtons">
+                <div class="row">
+                    <button class="action" onclick="handleReset()">AC</button>
+                    <button class="action">C</button>
+                    <button class="function">√</button>
+                    <button class="function">%</button>
+                </div>
+                <div class="row">
+                    <button value="7">7</button>
+                    <button value="8">8</button>
+                    <button value="9">9</button>
+                    <button class="function">÷</button>
+                </div>
+                <div class="row">
+                    <button value="4">4</button>
+                    <button value="5">5</button>
+                    <button value="6">6</button>
+                    <button class="function">x</button>
+                </div>
+                <div class="row">
+                    <button value="1">1</button>
+                    <button value="2">2</button>
+                    <button value="3">3</button>
+                    <div class="btnDual">
+                        <button class="function" onclick="handleSuma()">+</button>
+                        <button class="function" onclick="handleResta()">-</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <button value="0">0</button>
+                    <button value="00">00</button>
+                    <button value="." class="action">.</button>
+                    <button class="function" onclick="handleEqual()">=</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h5>Created by RolDev-22</h5>
+        <h6>Copyright © 2026</h6>
+    </footer>
+</body>
+
+</html>
