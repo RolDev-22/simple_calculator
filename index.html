@@ -20,37 +20,36 @@
             <input type="text" id="screen" disabled>
             <div class="containerButtons">
                 <div class="row">
-                    <button class="action" onclick="handleReset()">AC</button>
-                    <button class="action">C</button>
-                    <button class="function">√</button>
-                    <button class="function">%</button>
+                    <button class="buttonClass action" onclick="handleReset()">AC</button>
+                    <button class="buttonClass action" onclick="handleDelete()">C</button>
+                    <button class="buttonClass function">%</button>
+                    <button class="buttonClass function" onclick="handleDivision()">÷</button>
                 </div>
                 <div class="row">
-                    <button value="7">7</button>
-                    <button value="8">8</button>
-                    <button value="9">9</button>
-                    <button class="function">÷</button>
+                    <button class="buttonClass" value="7">7</button>
+                    <button class="buttonClass" value="8">8</button>
+                    <button class="buttonClass" value="9">9</button>
+                    <button class="buttonClass function" onclick="handleMultiplication()">x</button>
+
                 </div>
                 <div class="row">
-                    <button value="4">4</button>
-                    <button value="5">5</button>
-                    <button value="6">6</button>
-                    <button class="function">x</button>
+                    <button class="buttonClass" value="4">4</button>
+                    <button class="buttonClass" value="5">5</button>
+                    <button class="buttonClass" value="6">6</button>
+                    <button class="buttonClass function" onclick="handleAddition()">+</button>
+
                 </div>
                 <div class="row">
-                    <button value="1">1</button>
-                    <button value="2">2</button>
-                    <button value="3">3</button>
-                    <div class="btnDual">
-                        <button class="function" onclick="handleSuma()">+</button>
-                        <button class="function" onclick="handleResta()">-</button>
-                    </div>
+                    <button class="buttonClass" value="1">1</button>
+                    <button class="buttonClass" value="2">2</button>
+                    <button class="buttonClass" value="3">3</button>
+                    <button class=" buttonClass function" onclick="handleSubstraction()">-</button>
                 </div>
                 <div class="row">
-                    <button value="0">0</button>
-                    <button value="00">00</button>
-                    <button value="." class="action">.</button>
-                    <button class="function" onclick="handleEqual()">=</button>
+                    <button class="buttonClass" value="0">0</button>
+                    <button class="buttonClass" value="00">00</button>
+                    <button class="buttonClass action" value=".">.</button>
+                    <button class="buttonClass function" onclick="handleEqual()">=</button>
                 </div>
             </div>
         </section>
