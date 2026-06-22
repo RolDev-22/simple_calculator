@@ -45,6 +45,12 @@ function handleDivision() {
   clearScreen();
 }
 
+function handlePorcentual() {
+  aux = getCurrent();
+  operationUpdate(5);
+  clearScreen();
+}
+
 function handleEqual() {
   current = getCurrent();
   if (operationControl !== 0) {
@@ -93,6 +99,9 @@ function functionResult(option, val1, val2) {
     case 4:
       return division(val1, val2);
       break;
+    case 5:
+      return porcentual(val1, val2);
+      break;
   }
 }
 
@@ -110,4 +119,8 @@ function multiplication(value1, value2) {
 
 function division(value1, value2) {
   return value1 / value2;
+}
+
+function porcentual(value1, value2) {
+  return (value2 / 100) * value1;
 }
