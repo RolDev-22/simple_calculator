@@ -7,8 +7,11 @@
 :root {
   --bg-color: #e1e1e1;
   --primary-color: #00c8ff;
+  --primary-hover-color: #3391fc;
   --secondary-color: #9aa8ac;
+  --secondary-hover-color: #749199;
   --accent-color: #ff6f61;
+  --accent-hover-color: #ff0000;
 }
 
 h5,
@@ -95,12 +98,24 @@ main {
   padding: 0.5rem;
 }
 
+.bodyCalculator .containerButtons .row .buttonClass:hover {
+  background-color: var(--secondary-hover-color);
+}
+
 .bodyCalculator .containerButtons .row .action {
   background-color: var(--accent-color);
 }
 
+.bodyCalculator .containerButtons .row .action:hover {
+  background-color: var(--accent-hover-color);
+}
+
 .bodyCalculator .containerButtons .row .function {
   background-color: var(--primary-color);
+}
+
+.bodyCalculator .containerButtons .row .function:hover {
+  background-color: var(--primary-hover-color);
 }
 
 footer {
